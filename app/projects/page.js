@@ -1,6 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
 import { buttonVariants } from "@/components/ui/button"
+import Get_Me_a_Chai_Website from '@/public/images/Get_Me_a_Chai_Website.jpg'
+import Portfolio_Website from '@/public/images/Portfolio_Website.jpg'
+import Todo_List_Website from '@/public/images/Todo_List_Website.jpg'
+import Password_Manager_Website from '@/public/images/Password_Manager_Website.jpg'
+import Spotify_Clone from '@/public/images/Spotify_Clone.jpg'
+import X_Clone from '@/public/images/X_Clone.jpg'
+import Netflix_Clone from '@/public/images/Netflix_Clone.jpg'
 
 const projects = [
   {
@@ -9,7 +16,7 @@ const projects = [
     slug: 'https://github.com/NamanBhatia-NB/Portfolio_Website',
     date: '2024-10-10',
     author: 'Naman Bhatia',
-    image: '/images/Portfolio_Website.jpg',
+    image: { Portfolio_Website },
   },
   {
     title: 'Get Me a Chai',
@@ -17,7 +24,7 @@ const projects = [
     slug: 'https://github.com/NamanBhatia-NB/Get_Me_a_Chai_Website',
     date: '2024-07-31',
     author: 'Naman Bhatia',
-    image: '/images/Get_Me_a_Chai_Website.jpg',
+    image: { Get_Me_a_Chai_Website },
   },
   {
     title: 'Password Manager',
@@ -25,7 +32,7 @@ const projects = [
     slug: 'https://github.com/NamanBhatia-NB/Password_Manager_Website',
     date: '2024-07-20',
     author: 'Naman Bhatia',
-    image: '/images/Password_Manager_Website.jpg',
+    image: { Password_Manager_Website },
   },
   {
     title: 'Todo List Website',
@@ -33,7 +40,7 @@ const projects = [
     slug: 'https://github.com/NamanBhatia-NB/Todo_List_Website',
     date: '2024-07-11',
     author: 'Naman Bhatia',
-    image: '/images/Todo_List_Website.jpg',
+    image: { Todo_List_Website },
   },
   {
     title: 'Spotify Clone',
@@ -41,7 +48,7 @@ const projects = [
     slug: 'https://github.com/NamanBhatia-NB/Spotify_Clone',
     date: '2024-05-19',
     author: 'Naman Bhatia',
-    image: '/images/Spotify_Clone.jpg',
+    image: { Spotify_Clone },
   },
   {
     title: 'X Clone',
@@ -49,7 +56,7 @@ const projects = [
     slug: 'https://github.com/NamanBhatia-NB/X_Clone',
     date: '2024-07-03',
     author: 'Naman Bhatia',
-    image: '/images/X_Clone.jpg',
+    image: { X_Clone },
   },
   {
     title: 'Netflix Clone',
@@ -57,7 +64,7 @@ const projects = [
     slug: 'https://github.com/NamanBhatia-NB/Netflix_Clone',
     date: '2024-02-28',
     author: 'Naman Bhatia',
-    image: '/images/Netflix_Clone.jpg',
+    image: { Netflix_Clone },
   },
   // {
   //   title: 'Simple Car Driving Game',
