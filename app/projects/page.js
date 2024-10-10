@@ -73,9 +73,9 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="container mx-auto px-4 pt-8 pb-24 ">
+    <div className="container mx-auto px-4 pt-8 pb-28 ">
       <h1 className="text-3xl font-bold mb-8 text-center">My Projects</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 px-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-3">
         {projects.map((project) => (
           <div key={project.slug} className="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden hover:scale-105">
             {/*<Image src={project.image} alt={project.title} className="w-full h-40 sm:h-48 md:h-60 object-fit" height={500} width={500} />*/}
