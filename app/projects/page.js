@@ -78,7 +78,7 @@ const Projects = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-3">
         {projects.map((project) => (
           <div key={project.slug} className="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden hover:scale-105">
-            <Image src={project.image} alt={project.title} className="w-full h-40 sm:h-48 md:h-60 object-fit" height={500} width={500} />
+            {*<Image src={project.image} alt={project.title} className="w-full h-40 sm:h-48 md:h-60 object-fit" height={500} width={500} />*}
             <div className="p-4">
               <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100">{project.title}</h2>
               <p className="text-gray-600 dark:text-gray-400">{project.description}</p>
