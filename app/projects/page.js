@@ -8,7 +8,7 @@ const projects = [
     title: 'Portfolio Website',
     description: '',
     slug: 'https://github.com/NamanBhatia-NB/Portfolio_Website',
-    date: '2024-10-10',
+    date: '2024-10-11',
     author: 'Naman Bhatia',
     image: '/images/Portfolio_Website.jpg',
   },
