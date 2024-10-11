@@ -89,8 +89,8 @@ export default function Home() {
               </div>
               <div className="w-full md:w-1/3 p-4">
                 <div className="rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300 ease-in-out dark:bg-gray-800 light:bg-gray-200">
-                  <h3 className="text-2xl font-semibold dark:text-white light:text-black">Data Structures and Algorithms</h3>
-                  <p className="mt-2 dark:text-gray-400 light:text-gray-600">Learning DSA using C++</p>
+                  <h3 className="text-2xl font-semibold dark:text-white light:text-black">DSA</h3>
+                  <p className="mt-2 dark:text-gray-400 light:text-gray-600">Learning Data Structures and Algorithms using C++</p>
                 </div>
               </div>
             </div>
