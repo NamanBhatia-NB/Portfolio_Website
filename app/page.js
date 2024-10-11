@@ -76,19 +76,19 @@ export default function Home() {
             <h2 className="text-4xl font-bold mb-4 animate-pulse dark:text-white text-black">Top Skills</h2>
             <div className="flex flex-wrap justify-center">
               <div className="w-full md:w-1/3 p-4">
-                <div className="rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300 ease-in-out dark:bg-gray-800 light:bg-gray-200  max-h-25">
+                <div className="rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300 ease-in-out dark:bg-gray-800 light:bg-gray-200 lg:min-h-fit md:min-h-40">
                   <h3 className="text-2xl font-semibold dark:text-white light:text-black">JavaScript</h3>
                   <p className="mt-2 dark:text-gray-400 light:text-gray-600">Proficient in Node.js, React, and Next.js</p>
                 </div>
               </div>
               <div className="w-full md:w-1/3 p-4">
-                <div className="rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300 ease-in-out dark:bg-gray-800 light:bg-gray-200  max-h-25">
+                <div className="rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300 ease-in-out dark:bg-gray-800 light:bg-gray-200 lg:min-h-fit md:min-h-40">
                   <h3 className="text-2xl font-semibold dark:text-white light:text-black">CSS</h3>
                   <p className="mt-2 dark:text-gray-400 light:text-gray-600">Skilled in Tailwind CSS and Responsive Design</p>
                 </div>
               </div>
               <div className="w-full md:w-1/3 p-4">
-                <div className="rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300 ease-in-out dark:bg-gray-800 light:bg-gray-200  max-h-25">
+                <div className="rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300 ease-in-out dark:bg-gray-800 light:bg-gray-200 lg:min-h-fit md:min-h-40">
                   <h3 className="text-2xl font-semibold dark:text-white light:text-black">DSA</h3>
                   <p className="mt-2 dark:text-gray-400 light:text-gray-600">Learning Data Structures and Algorithms using C++</p>
                 </div>
