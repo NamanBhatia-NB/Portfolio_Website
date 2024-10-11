@@ -54,8 +54,6 @@ export default function Home() {
           </div>
         </section>
 
-
-
         <section className="py-12 border-y-[3px]" data-theme="dark">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-4xl font-bold mb-4 animate-bounce dark:text-white light:text-black">
@@ -67,7 +65,6 @@ export default function Home() {
             <Link href="/projects">
               <Button className="text-xl py-5" variant="outline">Get Started</Button>
             </Link>
-
           </div>
         </section>
 
