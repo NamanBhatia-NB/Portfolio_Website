@@ -3,24 +3,26 @@ import Link from 'next/link';
 import { buttonVariants } from "@/components/ui/button"
 import Image from 'next/image';
 import Get_Me_a_Chai_Website from "@/public/images/Get_Me_a_Chai_Website.jpg"
-
+import Portfolio_Website from "@/public/images/Portfolio_Website.jpg"
+import Todo_List_Website from "@/public/images/Todo_List_Website.jpg"
+import Password_Manager_Website from "@/public/images/Password_Manager_Website.jpg"
 
 const projects = [
   {
     title: 'Portfolio Website',
-    description: '',
+    description: 'This is my portfolio website.',
     slug: 'https://github.com/NamanBhatia-NB/Portfolio_Website',
     date: '2024-10-10',
     author: 'Naman Bhatia',
-    image: '/images/Portfolio_Website.jpg',
+    image: Portfolio_Website,
   },
   {
     title: 'Get Me a Chai',
-    description: '',
+    description: 'A website made for creators to collaborate with their fans.',
     slug: 'https://github.com/NamanBhatia-NB/Get_Me_a_Chai_Website',
     date: '2024-07-31',
     author: 'Naman Bhatia',
-    image: {Get_Me_a_Chai_Website},
+    image: Get_Me_a_Chai_Website,
   },
   {
     title: 'Password Manager',
@@ -28,7 +30,7 @@ const projects = [
     slug: 'https://github.com/NamanBhatia-NB/Password_Manager_Website',
     date: '2024-07-20',
     author: 'Naman Bhatia',
-    image: '/images/Password_Manager_Website.jpg',
+    image: Password_Manager_Website,
   },
   {
     title: 'Todo List Website',
@@ -36,7 +38,7 @@ const projects = [
     slug: 'https://github.com/NamanBhatia-NB/Todo_List_Website',
     date: '2024-07-11',
     author: 'Naman Bhatia',
-    image: '/images/Todo_List_Website.jpg',
+    image: Todo_List_Website,
   },
   // {
   //   title: 'Spotify Clone',
@@ -83,7 +85,7 @@ const Projects = () => {
             <Image src={project.image} alt={project.title} className="w-full h-40 sm:h-48 md:h-60 object-fit" height={500} width={500} />
             <div className="p-4">
               <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100">{project.title}</h2>
-              <p className="text-gray-600 dark:text-gray-400">{project.description}</p>
+              <p className="text-gray-600 dark:text-gray-400 min-h-12 text-md flex items-center">{project.description}</p>
               <p className="text-sm text-gray-500 dark:text-gray-300 mt-2">By {project.author} on {new Date(project.date).toLocaleDateString()}</p>
               <Link target="_blank" href={`${project.slug}`} className={`${buttonVariants({ variant: "outline" })} mt-4 bg-inherit hover:bg-accent dark:bg-inherit dark:hover:bg-background dark:border-background rounded-md`} >Learn More</Link>
             </div>
