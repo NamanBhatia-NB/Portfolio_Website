@@ -103,19 +103,19 @@ export default function Home() {
               <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
                 <h3 className="text-2xl font-semibold mb-4 dark:text-white">Get Me a Chai</h3>
                 <Link href='https://github.com/NamanBhatia-NB/Get_Me_a_Chai_Website' target="_blank">
-                  <Button className="border-background rounded-md hover:bg-background bg-accent" variant="outline">Learn More</Button>
+                  <Button className="border-background rounded-md  bg-inherit dark:hover:bg-background hover:bg-accent" variant="outline">Learn More</Button>
                 </Link>
               </div>
               <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
                 <h3 className="text-2xl font-semibold mb-4 dark:text-white">Password Manager</h3>
                 <Link href='https://github.com/NamanBhatia-NB/Password_Manager_Website' target="_blank">
-                  <Button className="border-background rounded-md hover:bg-background bg-accent" variant="outline">Learn More</Button>
+                  <Button className="border-background rounded-md  bg-inherit dark:hover:bg-background hover:bg-accent" variant="outline">Learn More</Button>
                 </Link>
               </div>
               <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
                 <h3 className="text-2xl font-semibold mb-4 dark:text-white">To-Do List</h3>
                 <Link href='https://github.com/NamanBhatia-NB/Todo_List_Website' target="_blank">
-                  <Button className="border-background rounded-md hover:bg-background bg-accent" variant="outline">Learn More</Button>
+                  <Button className="border-background rounded-md  bg-inherit dark:hover:bg-background hover:bg-accent" variant="outline">Learn More</Button>
                 </Link>
               </div>
             </div>
