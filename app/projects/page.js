@@ -85,7 +85,7 @@ const Projects = () => {
             <Image src={project.image} alt={project.title} className="w-full h-40 sm:h-48 md:h-60 object-fit" height={500} width={500} />
             <div className="p-4">
               <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100">{project.title}</h2>
-              <p className="text-gray-600 dark:text-gray-400 min-h-12 text-md flex items-center">{project.description}</p>
+              <p className="text-gray-600 dark:text-gray-400 min-h-12 text-md flex items-end">{project.description}</p>
               <p className="text-sm text-gray-500 dark:text-gray-300 mt-2">By {project.author} on {new Date(project.date).toLocaleDateString()}</p>
               <Link target="_blank" href={`${project.slug}`} className={`${buttonVariants({ variant: "outline" })} mt-4 bg-inherit hover:bg-accent dark:bg-inherit dark:hover:bg-background dark:border-background rounded-md`} >Learn More</Link>
             </div>
