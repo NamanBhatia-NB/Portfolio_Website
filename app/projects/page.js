@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { buttonVariants } from "@/components/ui/button"
 import Image from 'next/image';
+import Get_Me_a_Chai_Website from "@/public/images/Get_Me_a_Chai_Website.jpg"
 
 
 const projects = [
@@ -11,7 +12,7 @@ const projects = [
     slug: 'https://github.com/NamanBhatia-NB/Portfolio_Website',
     date: '2024-10-10',
     author: 'Naman Bhatia',
-    image: '@/public/images/Portfolio_Website.jpg',
+    image: '/images/Portfolio_Website.jpg',
   },
   {
     title: 'Get Me a Chai',
@@ -19,23 +20,23 @@ const projects = [
     slug: 'https://github.com/NamanBhatia-NB/Get_Me_a_Chai_Website',
     date: '2024-07-31',
     author: 'Naman Bhatia',
-    image: '@/public/images/Get_Me_a_Chai_Website.jpg',
+    image: {Get_Me_a_Chai_Website},
   },
   {
     title: 'Password Manager',
-    description: '',
+    description: 'A website used to save passwords on the local storage of your web browser.',
     slug: 'https://github.com/NamanBhatia-NB/Password_Manager_Website',
     date: '2024-07-20',
     author: 'Naman Bhatia',
-    image: '@/public/images/Password_Manager_Website.jpg',
+    image: '/images/Password_Manager_Website.jpg',
   },
   {
     title: 'Todo List Website',
-    description: '',
+    description: 'A website used to save your daily tasks on a to-do list.',
     slug: 'https://github.com/NamanBhatia-NB/Todo_List_Website',
     date: '2024-07-11',
     author: 'Naman Bhatia',
-    image: '@/public/images/Todo_List_Website.jpg',
+    image: '/images/Todo_List_Website.jpg',
   },
   // {
   //   title: 'Spotify Clone',
@@ -43,7 +44,7 @@ const projects = [
   //   slug: 'https://github.com/NamanBhatia-NB/Spotify_Clone',
   //   date: '2024-05-19',
   //   author: 'Naman Bhatia',
-  //   image: '@/public/images/Spotify_Clone.jpg',
+  //   image: '/images/Spotify_Clone.jpg',
   // },
   // {
   //   title: 'X Clone',
@@ -51,7 +52,7 @@ const projects = [
   //   slug: 'https://github.com/NamanBhatia-NB/X_Clone',
   //   date: '2024-07-03',
   //   author: 'Naman Bhatia',
-  //   image: '@/public/images/X_Clone.jpg',
+  //   image: '/images/X_Clone.jpg',
   // },
   // {
   //   title: 'Netflix Clone',
@@ -59,7 +60,7 @@ const projects = [
   //   slug: 'https://github.com/NamanBhatia-NB/Netflix_Clone',
   //   date: '2024-02-28',
   //   author: 'Naman Bhatia',
-  //   image: '@/public/images/Netflix_Clone.jpg',
+  //   image: '/images/Netflix_Clone.jpg',
   // },
   // {
   //   title: 'Simple Car Driving Game',
@@ -67,7 +68,7 @@ const projects = [
   //   slug: 'https://github.com/NamanBhatia-NB/Simple_Car_Driving_Game',
   //   date: '2024-06-29',
   //   author: 'Naman Bhatia',
-  //   image: '@/public/images/project-two.jpg',
+  //   image: '/images/project-two.jpg',
   // },
   // Add more projects as needed
 ];
