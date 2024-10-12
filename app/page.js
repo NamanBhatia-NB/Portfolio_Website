@@ -54,7 +54,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-12 border-y-[3px]" data-theme="dark">
+        <section className="py-12 border-y-[3px] bg-gray-100 dark:bg-gray-900" data-theme="dark">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-4xl font-bold mb-4 animate-bounce dark:text-white light:text-black">
               Welcome to My Portfolio
@@ -63,7 +63,7 @@ export default function Home() {
               Discover amazing features and projects.
             </p>
             <Link href="/projects">
-              <Button className="text-xl py-5" variant="outline">Get Started</Button>
+              <Button className="text-xl py-5 bg-inherit hover:bg-background border-background" variant="outline">Get Started</Button>
             </Link>
           </div>
         </section>
@@ -94,7 +94,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-10 bg-gray-100 dark:bg-gray-900">
+        <section className="py-10 bg-gray-100 dark:bg-gray-900 border-y-[3px]">
           <div className="container mx-auto px-8">
             <h2 className="text-4xl font-bold text-center mb-8 animate-pulse dark:text-white">
               Top Projects
@@ -102,21 +102,18 @@ export default function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
                 <h3 className="text-2xl font-semibold mb-4 dark:text-white">Get Me a Chai</h3>
-                {/*<p className="text-gray-700 dark:text-gray-300 mb-4">A brief description of the project goes here. Highlight key features and technologies used.</p>*/}
                 <Link href='https://github.com/NamanBhatia-NB/Get_Me_a_Chai_Website' target="_blank">
                   <Button className="border-background rounded-md hover:bg-background bg-accent" variant="outline">Learn More</Button>
                 </Link>
               </div>
               <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
                 <h3 className="text-2xl font-semibold mb-4 dark:text-white">Password Manager</h3>
-                {/*<p className="text-gray-700 dark:text-gray-300 mb-4">A brief description of the project goes here. Highlight key features and technologies used.</p>*/}
                 <Link href='https://github.com/NamanBhatia-NB/Password_Manager_Website' target="_blank">
                   <Button className="border-background rounded-md hover:bg-background bg-accent" variant="outline">Learn More</Button>
                 </Link>
               </div>
               <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
                 <h3 className="text-2xl font-semibold mb-4 dark:text-white">To-Do List</h3>
-                {/*<p className="text-gray-700 dark:text-gray-300 mb-4">A brief description of the project goes here. Highlight key features and technologies used.</p>*/}
                 <Link href='https://github.com/NamanBhatia-NB/Todo_List_Website' target="_blank">
                   <Button className="border-background rounded-md hover:bg-background bg-accent" variant="outline">Learn More</Button>
                 </Link>
