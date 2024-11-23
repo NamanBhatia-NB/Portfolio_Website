@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { MenuIcon } from 'lucide-react';
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetDescription,
   SheetHeader,
@@ -46,9 +47,19 @@ const Navbar = () => {
                 <SheetDescription>
                   <div className="gap-5 flex flex-col items-center">
                     <div className="flex flex-col gap-5 items-center">
-                      <Link href="/" className="hover:text-gray-400 text-lg">Home</Link>
-                      <Link href="/about" className="hover:text-gray-400 text-lg">About</Link>
-                      <Link href="/contact" className="hover:text-gray-400 text-lg">Contact</Link>
+                      <SheetClose asChild>
+                        <Link href="/" className="hover:text-gray-400 text-lg">Home</Link>
+                      </SheetClose>
+                      <SheetClose asChild>
+                        <Link href="/about" className="hover:text-gray-400 text-lg">About</Link>
+                      </SheetClose>
+                      <SheetClose asChild>
+                        <Link href="/projects" className="hover:text-gray-400 text-lg">Projects</Link>
+                      </SheetClose>
+                      <SheetClose asChild>
+                        <Link href="/contact" className="hover:text-gray-400 text-lg">Contact</Link>
+                      </SheetClose>
+
                     </div>
                     {/* <div className="flex items-center">
                       <Button className="mx-1" variant="outline">Sign up</Button>
