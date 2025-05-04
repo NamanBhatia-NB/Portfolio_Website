@@ -1,9 +1,36 @@
 import Image from "next/image";
-import mainImage from '@/public/images/homepage.png'
-import github from '@/public/images/github.png'
 import Link from "next/link";
-import { Button } from "@/components/ui/button"
-import linkedin from "@/public/images/linkedin.png";
+import mainImage from '@/public/images/homepage.png'
+import { Button, buttonVariants } from "@/components/ui/button"
+
+const projects = [
+  {
+    title: 'AI Investment Manager',
+    description: 'A website to analyze investments added by user using Gemini API.',
+    slug: 'https://github.com/NamanBhatia-NB/AI_Investment_Manager',
+    date: '2025-05-02',
+    author: 'Naman Bhatia',
+    image: '/images/AI_Investment_Manager.jpg',
+    website: 'https://ai-investment-manager.vercel.app/'
+  },
+  {
+    title: 'Todo List Website',
+    description: 'A website used to save and edit your daily tasks on a to-do-list website.',
+    slug: 'https://github.com/NamanBhatia-NB/Todo_List_Website',
+    date: '2024-07-11',
+    author: 'Naman Bhatia',
+    image: '/images/Todo_List_Website.jpg',
+    website: 'https://todo-list-website-indol.vercel.app/'
+  },
+  {
+    title: 'Get Me a Chai',
+    description: 'A website made for creators to collaborate with their fans.',
+    slug: 'https://github.com/NamanBhatia-NB/Get_Me_a_Chai_Website',
+    date: '2024-07-31',
+    author: 'Naman Bhatia ',
+    image: '/images/Get_Me_a_Chai_Website.jpg',
+  },
+];
 
 export default function Home() {
   return (
@@ -30,23 +57,47 @@ export default function Home() {
                 </div>
               </h1>
             </div>
-            <div className="sm:flex justify-center sm:justify-start mt-4 gap-4">
-              <Button className="border-accent rounded-lg bg-background hover:bg-accent flex gap-2 justify-center items-center transition duration-300 px-6 py-5 my-4 sm:my-0" variant="outline">
-                <Link href="https://github.com/NamanBhatia-NB" target="_blank" className="flex gap-4 justify-center items-center" >
-                  <Image src={github} alt="github" className="max-w-md mx-auto rounded-full" width={30} height={30} />
-                  <span className='text-lg'>
-                    Github
-                  </span>
-                </Link>
-              </Button>
-              <Button className="border-accent rounded-lg bg-background hover:bg-accent flex gap-2 justify-center items-center transition duration-300 p-5" variant="outline">
-                <Link href="https://www.linkedin.com/in/naman-bhatia-nb" target="_blank" className="flex gap-2 justify-center items-center" >
-                  <Image src={linkedin} alt="github" className="max-w-md mx-auto" width={25} height={25} />
-                  <span className="text-lg">
-                    Linked In
-                  </span>
-                </Link>
-              </Button>
+            <div className="grid grid-cols-2 gap-4 mt-4 py-2 md:grid-cols-[160px_160px] justify-items-center md:justify-items-start">
+              <div>
+                <Button className="border-accent rounded-lg bg-background hover:bg-accent flex gap-2 justify-around items-center transition duration-300 p-5 w-40" variant="outline">
+                  <Link href="https://github.com/NamanBhatia-NB" target="_blank" className="flex gap-4 justify-center items-center" >
+                    <Image src="/images/github.png" alt="github" className="max-w-md mx-auto rounded-full" width={30} height={30} />
+                    <span className='text-lg'>
+                      Github
+                    </span>
+                  </Link>
+                </Button>
+              </div>
+              <div>
+                <Button className="border-accent rounded-lg bg-background hover:bg-accent flex gap-2 justify-around items-center transition duration-300 p-5 w-40" variant="outline">
+                  <Link href="https://www.linkedin.com/in/naman-bhatia-nb" target="_blank" className="flex gap-2 justify-center items-center" >
+                    <Image src="/images/linkedin.png" alt="github" className="max-w-md mx-auto" width={25} height={25} />
+                    <span className="text-lg">
+                      LinkedIn
+                    </span>
+                  </Link>
+                </Button>
+              </div>
+              <div>
+                <Button className="border-accent rounded-lg bg-background hover:bg-accent flex gap-2 justify-around items-center transition duration-300 p-5 w-40" variant="outline">
+                  <Link href="https://leetcode.com/u/NamanBhatia-NB/" target="_blank" className="flex gap-2 justify-center items-center" >
+                    <Image src="/images/leetcode.png" alt="github" className="max-w-md mx-auto" width={25} height={25} />
+                    <span className="text-lg">
+                      Leetcode
+                    </span>
+                  </Link>
+                </Button>
+              </div>
+              <div>
+                <Button className="border-accent rounded-lg bg-background hover:bg-accent flex gap-2 justify-around items-center transition duration-300 p-5 w-40" variant="outline">
+                  <Link href="https://codeforces.com/profile/NamanBhatia-NB" target="_blank" className="flex gap-2 justify-center items-center" >
+                    <Image src="/images/codeforces.png" alt="github" className="max-w-md mx-auto" width={25} height={25} />
+                    <span className="text-lg">
+                      Codeforces
+                    </span>
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
           <div className="w-full mt-4 lg:mt-0 lg:w-1/2">
@@ -99,25 +150,20 @@ export default function Home() {
             <h2 className="text-4xl font-bold text-center mb-8 animate-pulse dark:text-white">
               Top Projects
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
-                <h3 className="text-2xl font-semibold mb-4 dark:text-white">Get Me a Chai</h3>
-                <Link href='https://github.com/NamanBhatia-NB/Get_Me_a_Chai_Website' target="_blank">
-                  <Button className="dark:border-background rounded-md  bg-inherit dark:hover:bg-background hover:bg-accent border-accent" variant="outline">Learn More</Button>
-                </Link>
-              </div>
-              <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
-                <h3 className="text-2xl font-semibold mb-4 dark:text-white">Password Manager</h3>
-                <Link href='https://github.com/NamanBhatia-NB/Password_Manager_Website' target="_blank">
-                  <Button className="dark:border-background rounded-md  bg-inherit dark:hover:bg-background hover:bg-accent border-accent" variant="outline">Learn More</Button>
-                </Link>
-              </div>
-              <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
-                <h3 className="text-2xl font-semibold mb-4 dark:text-white">To-Do List</h3>
-                <Link href='https://github.com/NamanBhatia-NB/Todo_List_Website' target="_blank">
-                  <Button className="dark:border-background rounded-md  bg-inherit dark:hover:bg-background hover:bg-accent border-accent" variant="outline">Learn More</Button>
-                </Link>
-              </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-3">
+              {projects.map((project) => (
+                <div key={project.slug} className="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden hover:scale-105">
+                  <div className="p-4 gap-3">
+                    <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100">{project.title}</h2>
+                    <p className="text-gray-600 dark:text-gray-400 min-h-12 text-md flex items-start">{project.description}</p>
+                    <p className="text-sm text-gray-500 dark:text-gray-300 mt-2">By {project.author} on {new Date(project.date).toLocaleDateString()}</p>
+                    <div className='gap-4 flex'>
+                      {project.website && <Link target="_blank" href={`${project.website}`} className={`${buttonVariants({ variant: "outline" })} mt-4 bg-inherit hover:bg-accent dark:bg-inherit dark:hover:bg-background dark:border-background rounded-md`} >Live Website</Link>}
+                      <Link target="_blank" href={`${project.slug}`} className={`${buttonVariants({ variant: "outline" })} mt-4 bg-inherit hover:bg-accent dark:bg-inherit dark:hover:bg-background dark:border-background rounded-md`} >GitHub Code</Link>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
             <div className='mt-4 mb-20 flex justify-end'>
               <Link href="/projects">

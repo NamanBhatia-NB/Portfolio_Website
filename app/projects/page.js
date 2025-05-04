@@ -2,10 +2,6 @@ import React from 'react';
 import Link from 'next/link';
 import { buttonVariants } from "@/components/ui/button"
 import Image from 'next/image';
-import Get_Me_a_Chai_Website from "@/public/images/Get_Me_a_Chai_Website.jpg"
-import Portfolio_Website from "@/public/images/Portfolio_Website.jpg"
-import Todo_List_Website from "@/public/images/Todo_List_Website.jpg"
-import Password_Manager_Website from "@/public/images/Password_Manager_Website.jpg"
 
 const projects = [
   {
@@ -14,23 +10,44 @@ const projects = [
     slug: 'https://github.com/NamanBhatia-NB/Portfolio_Website',
     date: '2024-10-10',
     author: 'Naman Bhatia',
-    image: Portfolio_Website,
+    image: '/images/Portfolio_Website.jpg',
+    website: 'https://namanbhatia-nb.github.io/Portfolio_Website/'
+  },
+  {
+    title: 'AI Investment Manager',
+    description: 'A Website to analyze investments by using Gemini API.',
+    slug: 'https://github.com/NamanBhatia-NB/AI_Investment_Manager',
+    date: '2025-05-02',
+    author: 'Naman Bhatia',
+    image: '/images/AI_Investment_Manager.jpg',
+    website: 'https://ai-investment-manager.vercel.app/'
   },
   {
     title: 'Get Me a Chai',
     description: 'A website made for creators to collaborate with their fans.',
     slug: 'https://github.com/NamanBhatia-NB/Get_Me_a_Chai_Website',
     date: '2024-07-31',
-    author: 'Naman Bhatia',
-    image: Get_Me_a_Chai_Website,
+    author: 'Naman Bhatia ',
+    image: '/images/Get_Me_a_Chai_Website.jpg',
+    website: '',
   },
   {
-    title: 'Password Manager',
+    title: 'E-Cell MSIT Website Home Page',
+    description: 'Developed the homepage of the E-Cell website of the institute.',
+    slug: 'https://github.com/NamanBhatia-NB/eCell-Final',
+    date: '2025-01-31',
+    author: 'Naman Bhatia & Shivam Mishra',
+    image: '/images/E_Cell_Website_Homepage.jpg',
+    website: 'https://e-cell-final.vercel.app/'
+  },
+  {
+    title: 'Password Manager Website',
     description: 'A website used to save passwords on the local storage of your web browser.',
     slug: 'https://github.com/NamanBhatia-NB/Password_Manager_Website',
     date: '2024-07-20',
     author: 'Naman Bhatia',
-    image: Password_Manager_Website,
+    image: '/images/Password_Manager_Website.jpg',
+    website: ''
   },
   {
     title: 'Todo List Website',
@@ -38,40 +55,45 @@ const projects = [
     slug: 'https://github.com/NamanBhatia-NB/Todo_List_Website',
     date: '2024-07-11',
     author: 'Naman Bhatia',
-    image: Todo_List_Website,
+    image: '/images/Todo_List_Website.jpg',
+    website: 'https://todo-list-website-indol.vercel.app/'
   },
-  // {
-  //   title: 'Spotify Clone',
-  //   description: '',
-  //   slug: 'https://github.com/NamanBhatia-NB/Spotify_Clone',
-  //   date: '2024-05-19',
-  //   author: 'Naman Bhatia',
-  //   image: '/images/Spotify_Clone.jpg',
-  // },
-  // {
-  //   title: 'X Clone',
-  //   description: '',
-  //   slug: 'https://github.com/NamanBhatia-NB/X_Clone',
-  //   date: '2024-07-03',
-  //   author: 'Naman Bhatia',
-  //   image: '/images/X_Clone.jpg',
-  // },
-  // {
-  //   title: 'Netflix Clone',
-  //   description: '',
-  //   slug: 'https://github.com/NamanBhatia-NB/Netflix_Clone',
-  //   date: '2024-02-28',
-  //   author: 'Naman Bhatia',
-  //   image: '/images/Netflix_Clone.jpg',
-  // },
-  // {
-  //   title: 'Simple Car Driving Game',
-  //   description: '',
-  //   slug: 'https://github.com/NamanBhatia-NB/Simple_Car_Driving_Game',
-  //   date: '2024-06-29',
-  //   author: 'Naman Bhatia',
-  //   image: '/images/project-two.jpg',
-  // },
+  {
+    title: 'Simple Car Driving Game',
+    description: 'A simple car driving game with basic controls.',
+    slug: 'https://github.com/NamanBhatia-NB/Simple_Car_Driving_Game',
+    date: '2024-06-29',
+    author: 'Naman Bhatia',
+    image: '/images/Simple_Car_Driving_Game.jpg',
+    website: 'https://namanbhatia-nb.github.io/Car_Driving_Game_2.0/'
+  },
+  {
+    title: 'Spotify Clone',
+    description: 'Clone of the Spotify website homepage with song playbar functionality.',
+    slug: 'https://github.com/NamanBhatia-NB/Spotify_Clone',
+    date: '2024-05-19',
+    author: 'Naman Bhatia',
+    image: '/images/Spotify_Clone.jpg',
+    website: ''
+  },
+  {
+    title: 'X Clone',
+    description: 'Clone of the X website homepage.',
+    slug: 'https://github.com/NamanBhatia-NB/X_Clone',
+    date: '2024-07-03',
+    author: 'Naman Bhatia',
+    image: '/images/X_Clone.jpg',
+    website: ''
+  },
+  {
+    title: 'Netflix Clone',
+    description: 'Clone of the Netflix website homepage.',
+    slug: 'https://github.com/NamanBhatia-NB/Netflix_Clone',
+    date: '2024-02-28',
+    author: 'Naman Bhatia',
+    image: '/images/Netflix_Clone.jpg',
+    website: ''
+  },
   // Add more projects as needed
 ];
 
@@ -83,11 +105,14 @@ const Projects = () => {
         {projects.map((project) => (
           <div key={project.slug} className="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden hover:scale-105">
             <Image src={project.image} alt={project.title} className="w-full h-40 sm:h-48 md:h-60 object-fit" height={500} width={500} />
-            <div className="p-4">
+            <div className="p-4 gap-3">
               <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100">{project.title}</h2>
-              <p className="text-gray-600 dark:text-gray-400 min-h-12 text-md flex items-end">{project.description}</p>
+              <p className="text-gray-600 dark:text-gray-400 min-h-12 text-md flex items-center">{project.description}</p>
               <p className="text-sm text-gray-500 dark:text-gray-300 mt-2">By {project.author} on {new Date(project.date).toLocaleDateString()}</p>
-              <Link target="_blank" href={`${project.slug}`} className={`${buttonVariants({ variant: "outline" })} mt-4 bg-inherit hover:bg-accent dark:bg-inherit dark:hover:bg-background dark:border-background rounded-md`} >Learn More</Link>
+              <div className='gap-4 flex'>
+                {project.website && <Link target="_blank" href={`${project.website}`} className={`${buttonVariants({ variant: "outline" })} mt-4 bg-inherit hover:bg-accent dark:bg-inherit dark:hover:bg-background dark:border-background rounded-md`} >Live Website</Link>}
+                <Link target="_blank" href={`${project.slug}`} className={`${buttonVariants({ variant: "outline" })} mt-4 bg-inherit hover:bg-accent dark:bg-inherit dark:hover:bg-background dark:border-background rounded-md`} >GitHub Code</Link>
+              </div>
             </div>
           </div>
         ))}
