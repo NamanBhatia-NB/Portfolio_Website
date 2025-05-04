@@ -11,7 +11,7 @@ const projects = [
     date: '2024-10-10',
     author: 'Naman Bhatia',
     image: '/images/Portfolio_Website.jpg',
-    website: 'https://namanbhatia-nb.github.io/Portfolio_Website/'
+    website: 'https://portfolio-website-naman-bhatias-projects.vercel.app/'
   },
   {
     title: 'AI Investment Manager',
