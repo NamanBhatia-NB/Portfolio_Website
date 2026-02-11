@@ -5,13 +5,22 @@ import Image from 'next/image';
 
 const projects = [
   {
-    title: 'Portfolio Website',
-    description: 'This is my portfolio website.',
-    slug: 'https://github.com/NamanBhatia-NB/Portfolio_Website',
-    date: '2024-10-10',
+    title: 'AI Podcast Clipper SaaS',
+    description: 'A SaaS application that converts full podcasts into viral short-form clips ready for social media use.',
+    // slug: 'https://github.com/NamanBhatia-NB/AI_Podcast_Clipper_SAAS',
+    date: '2026-02-01',
     author: 'Naman Bhatia',
-    image: '/images/Portfolio_Website.jpg',
-    website: 'https://portfolio-website-naman-bhatias-projects.vercel.app/'
+    image: '/images/AI_Podcast_Clipper.jpg',
+    website: 'https://podclipper.namanbhatia.live/',
+  },
+  {
+    title: 'AI Music Generator SaaS',
+    description: 'An AI music generation SaaS to create music from scratch with prompts using an open source AI model.',
+    // slug: 'https://github.com/NamanBhatia-NB/AI_Music_Generator_SAAS',
+    date: '2025-12-01',
+    author: 'Naman Bhatia',
+    image: '/images/AI_Music_Generator.jpg',
+    website: 'https://aimusicgen.namanbhatia.live/',
   },
   {
     title: 'AI Investment Manager',
@@ -20,14 +29,14 @@ const projects = [
     date: '2025-05-02',
     author: 'Naman Bhatia',
     image: '/images/AI_Investment_Manager.jpg',
-    website: 'https://ai-investment-manager.vercel.app/'
+    website: 'https://aiinvestor.namanbhatia.live/',
   },
   {
     title: 'Get Me a Chai',
     description: 'A website made for creators to collaborate with their fans.',
     slug: 'https://github.com/NamanBhatia-NB/Get_Me_a_Chai_Website',
     date: '2024-07-31',
-    author: 'Naman Bhatia ',
+    author: 'Naman Bhatia',
     image: '/images/Get_Me_a_Chai_Website.jpg',
     website: '',
   },
@@ -38,7 +47,7 @@ const projects = [
     date: '2025-01-31',
     author: 'Naman Bhatia & Shivam Mishra',
     image: '/images/E_Cell_Website_Homepage.jpg',
-    website: 'https://e-cell-final.vercel.app/'
+    website: 'https://e-cell-final.vercel.app/',
   },
   {
     title: 'Password Manager Website',
@@ -47,7 +56,7 @@ const projects = [
     date: '2024-07-20',
     author: 'Naman Bhatia',
     image: '/images/Password_Manager_Website.jpg',
-    website: ''
+    website: '',
   },
   {
     title: 'Todo List Website',
@@ -56,7 +65,7 @@ const projects = [
     date: '2024-07-11',
     author: 'Naman Bhatia',
     image: '/images/Todo_List_Website.jpg',
-    website: 'https://todo-list-website-indol.vercel.app/'
+    website: 'https://todo-list-website-indol.vercel.app/',
   },
   {
     title: 'Simple Car Driving Game',
@@ -65,7 +74,7 @@ const projects = [
     date: '2024-06-29',
     author: 'Naman Bhatia',
     image: '/images/Simple_Car_Driving_Game.jpg',
-    website: 'https://namanbhatia-nb.github.io/Car_Driving_Game_2.0/'
+    website: 'https://namanbhatia-nb.github.io/Car_Driving_Game_2.0/',
   },
   {
     title: 'Spotify Clone',
@@ -74,7 +83,7 @@ const projects = [
     date: '2024-05-19',
     author: 'Naman Bhatia',
     image: '/images/Spotify_Clone.jpg',
-    website: ''
+    website: '',
   },
   {
     title: 'X Clone',
@@ -83,7 +92,7 @@ const projects = [
     date: '2024-07-03',
     author: 'Naman Bhatia',
     image: '/images/X_Clone.jpg',
-    website: ''
+    website: '',
   },
   {
     title: 'Netflix Clone',
@@ -92,9 +101,8 @@ const projects = [
     date: '2024-02-28',
     author: 'Naman Bhatia',
     image: '/images/Netflix_Clone.jpg',
-    website: ''
+    website: '',
   },
-  // Add more projects as needed
 ];
 
 const Projects = () => {
@@ -111,7 +119,7 @@ const Projects = () => {
               <p className="text-sm text-gray-500 dark:text-gray-300 mt-2">By {project.author} on {new Date(project.date).toLocaleDateString()}</p>
               <div className='gap-4 flex'>
                 {project.website && <Link target="_blank" href={`${project.website}`} className={`${buttonVariants({ variant: "outline" })} mt-4 bg-inherit hover:bg-accent dark:bg-inherit dark:hover:bg-background dark:border-background rounded-md`} >Live Website</Link>}
-                <Link target="_blank" href={`${project.slug}`} className={`${buttonVariants({ variant: "outline" })} mt-4 bg-inherit hover:bg-accent dark:bg-inherit dark:hover:bg-background dark:border-background rounded-md`} >GitHub Code</Link>
+                {project.title && <Link target="_blank" href={`${project.slug}`} className={`${buttonVariants({ variant: "outline" })} mt-4 bg-inherit hover:bg-accent dark:bg-inherit dark:hover:bg-background dark:border-background rounded-md`} >GitHub Code</Link>}
               </div>
             </div>
           </div>
